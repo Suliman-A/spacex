@@ -1,0 +1,54 @@
+.launch-list-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.launch-list-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #005288;
+  font-size: 2.5rem;
+}
+
+.launch-list {
+  margin-top: 20px;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  
+  p {
+    margin-top: 15px;
+    color: #666;
+  }
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 4px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px 0;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.end-message {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+  color: #666;
+  font-style: italic;
+  border-top: 1px solid #eee;
+} 

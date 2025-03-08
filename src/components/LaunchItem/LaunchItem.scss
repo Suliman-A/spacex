@@ -1,0 +1,141 @@
+.launch-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  &__mission {
+    display: flex;
+    align-items: center;
+    
+    h3 {
+      margin: 0;
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+  }
+  
+  &__date {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  &__content {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  &__patch {
+    flex: 0 0 100px;
+    margin-right: 20px;
+    text-align: center;
+    
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    
+    .rocket-emoji {
+      font-size: 3rem;
+      display: block;
+    }
+  }
+  
+  &__details {
+    flex: 1;
+    
+    p {
+      margin: 0 0 10px;
+      line-height: 1.5;
+    }
+  }
+  
+  &__description {
+    color: #444;
+    font-size: 0.95rem;
+  }
+  
+  &__footer {
+    display: flex;
+    gap: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+  }
+  
+  &__link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #005288;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+    
+    &:hover {
+      background-color: #003b61;
+    }
+  }
+}
+
+.launch-status {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  
+  &.success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  &.failed {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+}
+
+@media (max-width: 768px) {
+  .launch-item {
+    &__content {
+      flex-direction: column;
+    }
+    
+    &__patch {
+      margin-right: 0;
+      margin-bottom: 15px;
+      text-align: center;
+      
+      img {
+        max-width: 80px;
+      }
+      
+      .rocket-emoji {
+        font-size: 2.5rem;
+      }
+    }
+    
+    &__footer {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+} 
